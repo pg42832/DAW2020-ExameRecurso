@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>Teste Recurso</key>
+        <title>Teste Recurso</title>
+        <bdate>08/02/2021</bdate>
+        <edate>08/02/2021</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="pg42832">
+            <name>Guilherme Fraga Palumbo</name>
+            <email>pg42832@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>        
+        <p>As respostas estão na pasta dataset Ex1-dataset_import.txt </p>
+       
+    </abstract>
+    <deliverables>
+    <link url="/dataset/Ex1-dataset_import.txt">Respostas</link>
+        <link url="/ex3">Exercício 3</link>
+        <link url="/ex4">Exercício 4</link>
+        <link url="https://github.com/pg42832/DAW2020-ExameRecurso">Repositorio Git</link>
+    </deliverables>
+</pr>
