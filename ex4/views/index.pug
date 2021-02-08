@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  .w3-container.w3-margin
+    table.w3-table-all
+      tr
+        th _id
+        th team
+        th pitch1
+        th pitch2
+        th techPitch
+        th businessReport
+        th techReport
+        th nMembers
+
+      each t in dados
+        tr(id=t.id)
+          th
+            a(href='/teams/'+t._id)= t._id
+          th
+            a(href='/teams/'+t._id)= t.team
+          th
+            a(href='/teams/'+t._id)= t.pitch1
+          th
+            a(href='/teams/'+t._id)= t.pitch2
+          th
+            a(href='/teams/'+t._id)= t.techPitch
+          th
+            a(href='/teams/'+t._id)= t.businessReport
+          th
+            a(href='/teams/'+t._id)= t.techReport
+          th
+            a(href='/teams/'+t._id)= t.nmembers
+
+

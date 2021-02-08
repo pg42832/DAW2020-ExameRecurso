@@ -1,0 +1,31 @@
+Ex1 - 
+    mongoimport -d PEI2020 -c teams --jsonArray teams.json
+
+Ex2 -
+
+Quantas equipes existem na base de dados?
+1)db.teams.count()
+R: 87
+
+Quais as equipes?
+2)db.teams.distinct("team").sort()
+
+
+Quantos alunos existem catalogados na base de dados?
+3)db.teams.distinct({"members.id").count()
+
+
+Quais os alunos?
+4)db.teams.distinct("members.id").sort()
+
+
+
+Quantos alunos do MIEI existem catalogados na base de dados?
+5)
+
+Quantos membros tem cada equipe?
+6)db.teams.aggregate([{$project:{id: 1, nrDeAlunos: {$size : "$members"}}}])
+
+
+
+

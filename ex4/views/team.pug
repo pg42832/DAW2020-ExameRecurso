@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  .w3-top
+    .w3-bar.w3-blue-gray
+      h1="ID: " + dados._id
+  br
+  br
+  br
+  .w3-container.w3-margin
+    .w3-container.w3-margin
+        h3 Informação
+        p 
+          strong ID: 
+          |  #{dados._id}
+        p 
+          strong guid: 
+          |  #{dados.guid}
+        p
+          strong team:
+          |  #{dados.team}
+        p
+          strong pitch1:
+          |  #{dados.pitch1}
+        p
+          strong pitch2:
+          |  #{dados.pitch2}
+        p
+          strong techPitch:
+          |  #{dados.techPitch}
+        p
+          strong businessReport:
+          |  #{dados.businessReport}
+        p
+          strong techReport:
+          |  #{dados.techReport}
+
+        //- p Member
+        //- each f in dados.members
+        //-   li #{f.id}
+        //-   li #{f.name}
+        //-   li #{f.course}
+        //-   course
+        //-   ul
+        //-     li #{f.scores}
+
+
+
+      
+        
+
+        
+    button.w3-button.w3-blue-gray(type='button', id='home', onclick='window.location.href="/";') Home
